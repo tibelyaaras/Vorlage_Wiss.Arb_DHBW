@@ -1,20 +1,25 @@
-\def\title{Title}
-\def\author{Vorname Nachname}
+\def\title{Titel}
+\def\author{Autor}
+
+\newgeometry{
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=3cm,
+  bindingoffset=5mm
+}
 
 \begin{titlepage}
 
 
-\begin{minipage}[t]{0.25\textwidth}
-DHBW Mosbach,\\
-
-Lohrtalweg 10,
-
-74821 Mosbach
-
+\begin{minipage}[c]{0.25\textwidth}
+DHBW Mosbach,\\ \\
+Lohrtalweg 10,\\
+74821 Mosbach\\
 Deutschland
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.25\textwidth}
+\begin{minipage}[c]{0.25\textwidth}
 \includegraphics[height=1.5cm]{prefix/image/logo-dhbw.eps}
 \end{minipage}
 
@@ -22,38 +27,42 @@ Deutschland
 
 
 \begin{center}
-	\vspace{5mm}
+	\vspace{15mm}
 	
-	\huge \title
+	\LARGE \title
 	
-	\vspace{50pt}
+	\vspace{15pt}
 	
-	\large \bfseries Bachelorarbeit für die Prüfung zum Bachelor of Science an der Dualen Hochschule Baden-Württemberg Mosbach
+	\large \bfseries Praxisarbeit T1000 an der Dualen Hochschule Baden-Württemberg Mosbach
 
 	
 \end{center}
 
-\vspace{15pt}
-
+\vspace{2pt}
+\begin{singlespace}
 \begin{tabular}{ll}
-         Studiengang/-richtung:       	& BoS - Angewandte Informatik   \\
-         Kurs:                 			& Kurs    						\\
-         Name, Vorname:                 & Name, Vorname          	 	\\
+         \small Studiengang/-richtung:       	& BoS - Angewandte Informatik   \\
+         \small Kurs:                 			& Kurs   						\\
+         \small Name, Vorname:                 & Nachname, Vorname          	 	\\
         \\
-         Matrikelnummer:        		& 1234567        				\\
-         Geburtsdatum:      			& 01.01.1999        			\\
-         Geburtsort:					& Geburtsort					\\
-         Name, Vorname des wiss.\\ Prüfenden/Betreuenden: & Betreuende Person \\
+         \small Matrikelnummer:        		& Matr.Nr.        				\\
+         \small Geburtsdatum:      			& DD.MM.YYYY        			\\
+         \small Geburtsort:					& Geburtsort						\\
+         \small Name, Vorname des wiss.\\ Prüfenden/Betreuenden: 
+         \small & Betreuer \\
         \\
-         Name und Sitz des Ausbildungsbetriebes:	& Firma, Ort		\\
-         Abgabedatum		& 22.02.2022		\\
-        Sperrvermerk		& Der Inhalt dieser Arbeit darf weder \\
-         & als Ganzes noch in Auszügen Personen\\
-         & außerhalb des Prüfungsprozesses und des\\
-         & Evaluationsverfahrens zugänglich gemacht\\
-         & werden, sofern keine anders lautende\\
-         & Genehmigung der Ausbildungsstätte vorliegt.  \\
+         \small Name und Sitz des Ausbildungsbetriebes: & Firma,\\
+         \small & Straße und Hausnr.		\\
+         \small & PLZ Ort	\\
+         \small Abgabedatum		& Datum		\\
+         \small Sperrvermerk		& Der Inhalt dieser Arbeit darf weder als\\
+         \small & Ganzes noch in Auszügen Personen außerhalb\\
+         \small & des Prüfungsprozesses und des Evaluations-\\
+         \small & verfahrens zugänglich gemacht werden,\\
+         \small & sofern keine anders lautende Genehmigung\\
+         \small & der Ausbildungsstätte vorliegt.  \\
     \end{tabular}
+    \end{singlespace}
 
 
 \vspace{49.7pt}
@@ -62,5 +71,4 @@ Deutschland
   \fancyhf{}
   \fancyfoot[C]{\today}
 }
-
 \end{titlepage}
